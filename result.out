@@ -1,0 +1,72 @@
+MATLAB is selecting SOFTWARE OPENGL rendering.
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2015 The MathWorks, Inc.
+                   R2015b (8.6.0.267246) 64-bit (glnxa64)
+                              August 20, 2015
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+>> >> >> >> >> >> >> >> >> >> >> >> 
+LinearRegression :: Prec = 0.285976, Rec = 0.321059, F1 = 0.302504, N+ = 128
+Elapsed time is 65.530845 seconds.
+
+hyper-parameter tuning ... 
+ optIter = 1, tagIdx = 260, instanceIdx = 3994, thresholdPos = 0.000000
+
+beta = 1.000000e-02, alpha = 1.000000e+00, noise = 0.000000, layer = 1, precVal = 0.241253, recVal = 0.269942, f1Val = 0.254792, retrievedVal = 119
+beta = 1.000000e-02, alpha = 1.000000e+00, noise = 0.000000, layer = 3, precVal = 0.249665, recVal = 0.265425, f1Val = 0.257304, retrievedVal = 117
+beta = 1.000000e-02, alpha = 1.000000e+00, noise = 0.100000, layer = 1, precVal = 0.246799, recVal = 0.271850, f1Val = 0.258720, retrievedVal = 118
+beta = 1.000000e-02, alpha = 1.000000e+00, noise = 0.100000, layer = 2, precVal = 0.254120, recVal = 0.275950, f1Val = 0.264585, retrievedVal = 118
+beta = 1.000000e-02, alpha = 1.000000e+00, noise = 0.100000, layer = 3, precVal = 0.264105, recVal = 0.277833, f1Val = 0.270795, retrievedVal = 120
+
+ optIter = 2, tagIdx = 140, instanceIdx = 1594, thresholdPos = 0.452961
+
+beta = 1.000000e-02, alpha = 1.000000e+00, noise = 0.000000, layer = 1, precVal = 0.283930, recVal = 0.274524, f1Val = 0.279148, retrievedVal = 128
+beta = 1.000000e-02, alpha = 1.000000e+00, noise = 0.000000, layer = 2, precVal = 0.276345, recVal = 0.282944, f1Val = 0.279606, retrievedVal = 128
+beta = 1.000000e-02, alpha = 1.000000e+00, noise = 0.100000, layer = 1, precVal = 0.285775, recVal = 0.276958, f1Val = 0.281297, retrievedVal = 129
+beta = 1.000000e-02, alpha = 1.000000e+00, noise = 0.200000, layer = 1, precVal = 0.290302, recVal = 0.277494, f1Val = 0.283753, retrievedVal = 131
+beta = 1.000000e-02, alpha = 1.000000e+00, noise = 0.200000, layer = 2, precVal = 0.287491, recVal = 0.290714, f1Val = 0.289093, retrievedVal = 133
+beta = 1.000000e-02, alpha = 1.000000e+00, noise = 0.300000, layer = 2, precVal = 0.291411, recVal = 0.291234, f1Val = 0.291322, retrievedVal = 135
+beta = 1.000000e-02, alpha = 1.000000e+00, noise = 0.400000, layer = 2, precVal = 0.297269, recVal = 0.294050, f1Val = 0.295650, retrievedVal = 137
+
+ optIter = 3, tagIdx = 123, instanceIdx = 1249, thresholdPos = 0.580644
+
+beta = 1.000000e-02, alpha = 1.000000e+00, noise = 0.000000, layer = 2, precVal = 0.309793, recVal = 0.310557, f1Val = 0.310174, retrievedVal = 144
+
+ optIter = 4, tagIdx = 116, instanceIdx = 1171, thresholdPos = 0.604984
+
+beta = 1.000000e-02, alpha = 1.000000e+00, noise = 0.700000, layer = 2, precVal = 0.323099, recVal = 0.299442, f1Val = 0.310821, retrievedVal = 143
+
+ optIter = 5, tagIdx = 117, instanceIdx = 1285, thresholdPos = 0.608004
+
+beta = 1.000000e-02, alpha = 1.000000e+00, noise = 0.000000, layer = 1, precVal = 0.332740, recVal = 0.317610, f1Val = 0.324999, retrievedVal = 153
+beta = 1.000000e-02, alpha = 1.000000e+00, noise = 0.800000, layer = 1, precVal = 0.333379, recVal = 0.317744, f1Val = 0.325374, retrievedVal = 155
+beta = 1.000000e-02, alpha = 1.000000e+00, noise = 0.900000, layer = 1, precVal = 0.335741, recVal = 0.325646, f1Val = 0.330617, retrievedVal = 156
+
+ optIter = 6, tagIdx = 104, instanceIdx = 1083, thresholdPos = 0.679957
+
+
+ optIter = 1, tagIdx = 260, instanceIdx = 4493
+
+FastTag :: Beta = 1.000000e-02, Noise = 0.100000, Layer = 3, Alpha = 1.000000e+00, Prec = 0.291324, Rec = 0.316991, F1 = 0.303616, N+ = 125
+
+ optIter = 2, tagIdx = 140, instanceIdx = 1779
+
+FastTag :: Beta = 1.000000e-02, Noise = 0.400000, Layer = 2, Alpha = 1.000000e+00, Prec = 0.312311, Rec = 0.365723, F1 = 0.336913, N+ = 143
+
+ optIter = 3, tagIdx = 123, instanceIdx = 1396
+
+FastTag :: Beta = 1.000000e-02, Noise = 0.000000, Layer = 2, Alpha = 1.000000e+00, Prec = 0.307738, Rec = 0.356320, F1 = 0.330252, N+ = 140
+
+ optIter = 4, tagIdx = 116, instanceIdx = 1310
+
+FastTag :: Beta = 1.000000e-02, Noise = 0.700000, Layer = 2, Alpha = 1.000000e+00, Prec = 0.320482, Rec = 0.387614, F1 = 0.350866, N+ = 153
+
+ optIter = 5, tagIdx = 117, instanceIdx = 1435
+
+FastTag :: Beta = 1.000000e-02, Noise = 0.900000, Layer = 1, Alpha = 1.000000e+00, Prec = 0.333150, Rec = 0.400043, F1 = 0.363545, N+ = 159
+Elapsed time is 334.126046 seconds.
+>> 
