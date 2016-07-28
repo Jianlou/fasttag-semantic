@@ -1,2 +1,3 @@
 *.mat
 /feature/*
+.DS_Store
