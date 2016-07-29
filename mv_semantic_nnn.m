@@ -23,7 +23,7 @@ ParaM2.beta5 = 0;
 ParaM2.bs = 1;
 ParaM2.wlabel = 1;
 ParaM2.kNN = ParaM1.kNN;
-load('/Users/lou/Desktop/corel5k_tagVector.mat');
+load('../corel5k_tagVector.mat');
 tagV = tagVector';
 tagV = tagV./repmat(sqrt(sum(tagV.^2,1)),[size(tagV,1),1]);
 [predTe] = semantic_mapping_nnn(vFeature, yTr, tagV, trteindx, ParaM2);
