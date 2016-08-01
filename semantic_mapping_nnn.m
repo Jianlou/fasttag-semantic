@@ -1,5 +1,5 @@
 function [predTe] = semantic_mapping_nnn(vFeature, yTr, tagVector, trteindx, ParaM)
-
+% tagVector = eye(size(tagVector,2));
 %% 1. load parameter
 beta1 = ParaM.beta1;
 beta2 = ParaM.beta2;
@@ -25,8 +25,12 @@ DiM = diag(sum(Sim,1));
 LMV = DiM - Sim;
 LMV = LMV + 1e-15*eye(N,N);
 % Laplacian matrix L^(tag)
+% Wpos = 1./max(1, sum(F>0, 2));
+% h = (sum(bsxfun(@times, (F>0), Wpos), 1))';
+% %     h_hat = ones(N,1);
+% H = spdiags(h, 0, N, N);
 SimF = F*F';
-Fnorm = sqrt(sum(F.^2,2));
+Fnorm = sqrt(sum((F).^2,2));
 SimF = SimF./(repmat(Fnorm, [1 r]).*repmat(Fnorm', [r 1])+1e-20);
 DimF = diag(sum(SimF,1));
 LTAG = DimF - SimF;

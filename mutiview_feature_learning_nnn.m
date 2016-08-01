@@ -1,4 +1,4 @@
-function [MultiM, vFeature, indx, normP, trteindx] = mutiview_feature_learning_nnn(xTr, yTr, xTe, ParaM)
+function [MultiM, vFeature, indx, normP, trteindx] = mutiview_feature_learning_nnn(xTr, yTr, xTe, ParaM,tagV)
 
 %% 1. load feature
 xTrain = [];
@@ -37,9 +37,10 @@ end
 Similarity{partN+1} = [yTr, yTe]'*[yTr, yTe];
 Ynorm = sqrt(sum([yTr, yTe].^2,1));
 Similarity{partN+1} = Similarity{partN+1}./(repmat(Ynorm,[N 1]).*repmat(Ynorm', [1 N])+1e-20);
+% Similarity{partN+1} = calSimilarity([tagV*yTr, tagV*yTe],kNN);
 if typeLap == 1
     for i = 1:partN
-        Similarity{i} = Similarity{i}.*Similarity{partN+1};
+        Similarity{i} = Similarity{i};%.*Similarity{partN+1};
         [tt,pp] = sort(Similarity{i},'descend');
         Similarity{i}(find(Similarity{i}<repmat(tt(kNN,:),[N 1]))) = 0;
         Similarity{i}(find((Similarity{i}-Similarity{i}')~=0))=0;
