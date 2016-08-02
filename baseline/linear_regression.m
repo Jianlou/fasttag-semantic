@@ -7,11 +7,11 @@ for i=1:length(xTr)
     xTest = [xTest;xTe{i}];
 end
 
-D = size(xTrain,1);
+[D,N] = size(xTrain);
 d = 3000;
-P = randn(D,d);
-[Q, ~] = qr(P,0);
-P = Q;
+RR = randn(N,d);
+temp = xTrain*RR;
+[P, ~] = qr(temp,0);
 
 clear xTr xTe
 for beta = [1e-2]

@@ -109,7 +109,7 @@ vtau_u_n1 = 1e-2;
 vtau_v_n1 = 1e-2;
 
 %% 5. optimize
-for iter =0:30 
+for iter =0:-1 
     % opt U
     % 1.
     U_HAT = U_0 + ((vt_u_n1 - 1)/(vt_u_0))*(U_0 - U_N1);
